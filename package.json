@@ -1,6 +1,6 @@
 {
   "name": "liferay-lang-key-dev-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Webpack loader for inlining your language keys.",
   "main": "index.js",
   "scripts": {
