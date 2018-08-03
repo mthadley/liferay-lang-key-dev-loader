@@ -31,10 +31,8 @@ const LANG_KEY_PATH = path.resolve(
 const REGEX = /Liferay\s*\.Language\s*\.get\(\s*'(.*?)'\s*\)/g;
 
 module.exports = function(source /* : string */) {
-	const {
-		path = LANG_KEY_PATH,
-		regex = REGEX
-	} /* : Options */ = loaderUtils.getOptions(this);
+	const {path = LANG_KEY_PATH, regex = REGEX} /* : Options */ =
+		loaderUtils.getOptions(this) || {};
 
 	this.addDependency(path);
 
