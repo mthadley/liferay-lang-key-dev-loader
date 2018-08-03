@@ -1,0 +1,43 @@
+{
+  "name": "liferay-lang-key-dev-loader",
+  "version": "1.0.0",
+  "description": "A Webpack loader for inlining your language keys.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && flow && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthadley/liferay-lang-key-dev-loader.git"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "liferay",
+    "webpack",
+    "loader"
+  ],
+  "author": "Michael Hadley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthadley/liferay-lang-key-dev-loader/issues"
+  },
+  "homepage": "https://github.com/mthadley/liferay-lang-key-dev-loader#readme",
+  "devDependencies": {
+    "flow-bin": "^0.77.0",
+    "jest": "^23.4.2",
+    "xo": "^0.21.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "properties": "^1.2.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "jest"
+    ],
+    "prettier": "true"
+  }
+}
