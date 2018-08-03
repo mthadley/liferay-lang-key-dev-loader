@@ -14,61 +14,7 @@
  */
 
 declare module 'properties' {
-  declare module.exports: any;
-}
-
-/**
- * We include stubs for each file inside this npm package in case you need to
- * require those files directly. Feel free to delete any files that aren't
- * needed.
- */
-declare module 'properties/lib/escape' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/index' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/parse' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/read' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/stringifier' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/stringify' {
-  declare module.exports: any;
-}
-
-declare module 'properties/lib/write' {
-  declare module.exports: any;
-}
-
-// Filename aliases
-declare module 'properties/lib/escape.js' {
-  declare module.exports: $Exports<'properties/lib/escape'>;
-}
-declare module 'properties/lib/index.js' {
-  declare module.exports: $Exports<'properties/lib/index'>;
-}
-declare module 'properties/lib/parse.js' {
-  declare module.exports: $Exports<'properties/lib/parse'>;
-}
-declare module 'properties/lib/read.js' {
-  declare module.exports: $Exports<'properties/lib/read'>;
-}
-declare module 'properties/lib/stringifier.js' {
-  declare module.exports: $Exports<'properties/lib/stringifier'>;
-}
-declare module 'properties/lib/stringify.js' {
-  declare module.exports: $Exports<'properties/lib/stringify'>;
-}
-declare module 'properties/lib/write.js' {
-  declare module.exports: $Exports<'properties/lib/write'>;
+  declare module.exports: {
+    parse(source: string): { [string]: string } | void;
+  };
 }
